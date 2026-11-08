@@ -1,0 +1,262 @@
+/* ===== CORES (mude aqui para trocar o visual do site) ===== */
+:root {
+  --fundo: #f3f2ee;
+  --branco: #ffffff;
+  --texto: #151619;
+  --cinza: #686d73;
+  --borda: #d9d9d9;
+  -vermelho: #e3262e;
+  --escuro: #151619;
+}
+
+/* ===== GERAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+.logotipo{
+    height: 50px;
+}
+
+.nitrox{
+    height: 300px;
+    margin-left: -50px;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: Barlow, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+}
+
+/* Caixa central que limita a largura do conteúdo */
+.conteudo {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== TOPO ===== */
+.topo {
+  background: var(--escuro);
+  color: var(--fundo);
+}
+
+.topo .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.logo {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--vermelho);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.botao-whatsapp {
+  background: #e3262e;
+  color: var(--texto);
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ===== DESTAQUE ===== */
+.destaque {
+  padding: 64px 0 48px;
+}
+
+.destaque h1 {
+  max-width: 12ch;
+  font-size: clamp(42px, 8vw, 80px);
+}
+
+.destaque p {
+  max-width: 46ch;
+  margin: 18px 0 26px;
+  color: var(--cinza);
+  font-size: 18px;
+}
+
+.botao {
+  display: inline-block;
+  background: var(--escuro);
+  color: var(--fundo);
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Faixa amarela tracejada, parecida com a pintura de uma rua */
+.faixa {
+  height: 6px;
+  margin-top: 48px;
+  background: repeating-linear-gradient(90deg, var(--vermelho) 0 48px, transparent 48px 84px);
+}
+
+/* ===== PRODUTOS ===== */
+.produtos {
+  padding: 48px 0;
+}
+
+.produtos h2 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  margin: 0 0 28px;
+  color: var(--cinza);
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.categorias a {
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.categorias a:hover {
+  border-color: var(--vermelho);
+}
+
+/* Grade: os cartões se ajustam sozinhos ao tamanho da tela */
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+}
+
+.imagem {
+  display: grid;
+  place-items: center;
+  height: 150px;
+  background: var(--borda);
+  border-radius: 6px 6px 0 0;
+  font-size: 54px;
+}
+
+.dados {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  padding: 14px 16px 16px;
+}
+
+.dados h3 {
+  font-size: 22px;
+}
+
+.dados small {
+  color: var(--cinza);
+}
+
+.preco {
+  margin-top: auto;
+  padding-top: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.preco small {
+
+  font-family: Barlow, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.botao-comprar {
+  display: block;
+  margin-top: 8px;
+  padding: 8px;
+  border: 2px solid var(--texto);
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.botao-comprar:hover {
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+/* ===== VANTAGENS ===== */
+.vantagens {
+  padding: 48px 0;
+  background: var(--escuro);
+  color: var(--fundo);
+}
+
+.vantagens .conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.vantagens h3 {
+  font-size: 22px;
+  color: var(--vermelho);
+}
+
+.vantagens p {
+  margin: 4px 0 0;
+}
+/* ===== RODAPÉ ===== */
+.rodape {
+  padding: 32px 0;
+  color: var(--cinza);
+  font-size: 14px;
+}

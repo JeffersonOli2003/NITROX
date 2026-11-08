@@ -1,0 +1,23 @@
+@import url(style.css);
+
+.info {
+  display: block;
+  margin-top: 8px;
+  padding: 1px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #151619;
+  color: white;
+  transition: 0.5s;
+}
+
+.info:hover {
+    scale: 105%;
+}
+
+.traBlue{
+    height: 250px;
+    border-radius: 4px;
+}
