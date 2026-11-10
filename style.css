@@ -137,11 +137,6 @@ a {
   margin-bottom: 6px;
 }
 
-.subtitulo {
-  margin: 0 0 28px;
-  color: var(--cinza);
-}
-
 .categorias {
   display: flex;
   flex-wrap: wrap;
@@ -160,21 +155,6 @@ a {
 
 .categorias a:hover {
   border-color: var(--vermelho);
-}
-
-/* Grade: os cartões se ajustam sozinhos ao tamanho da tela */
-.lista-produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 20px;
-}
-
-.produto {
-  display: flex;
-  flex-direction: column;
-  background: var(--branco);
-  border: 1px solid var(--borda);
-  border-radius: 6px;
 }
 
 .imagem {

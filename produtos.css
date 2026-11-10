@@ -20,4 +20,79 @@
 .traBlue{
     height: 250px;
     border-radius: 4px;
+    pointer-events: none;
+}
+
+.kitFerr{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.supVei{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+.antInt{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.canPol{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.moniTemp{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* Grade: os cartões se ajustam sozinhos ao tamanho da tela */
+.liDigitais {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.liFerramentas{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.liInternos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.subtitulo {
+  margin: 0 0 28px;
+  color: var(--cinza);
+}
+
+.reSubtitulo{
+    margin: 0 0 28px;
+    margin-top: 50px;
+    color: var(--texto);
+    font-size: 35px;
+    border-bottom: 2px solid var(--cinza);
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.produto:hover{
+    scale: 105%;
 }
