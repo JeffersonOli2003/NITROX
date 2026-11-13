@@ -29,6 +29,11 @@
     pointer-events: none;
 }
 
+.caboPont{
+    height: 250px;
+    border-radius: 4px;
+    pointer-events: none;
+}
 .supVei{
     height: 250px;
     border-radius: 4px;
